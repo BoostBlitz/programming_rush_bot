@@ -8,7 +8,7 @@ user_memory = {}
 
 # Initialize Gemini
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Call Gemini to get explanation
 def get_deep_explanation(command):
